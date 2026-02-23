@@ -1,0 +1,45 @@
+.tp-page {
+  background: #f6f9fb;
+  padding: 60px 20px;
+}
+
+.tp-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.tp-container h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #0b4c5f;
+}
+
+.tp-policy-title {
+  margin-top: 50px;
+}
+
+.tp-updated {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.tp-section {
+  margin-bottom: 30px;
+}
+
+.tp-section h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #114e60;
+}
+
+.tp-section p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}

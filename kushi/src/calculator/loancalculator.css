@@ -1,0 +1,972 @@
+/* ---------- Page Wrapper ---------- */
+.lc-wrapper {
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    font-family: 'Georgia', serif;
+}
+
+/* ---------- Card ---------- */
+.lc-card {
+    width: 100%;
+    max-width: 1100px;
+    background: #0d1526;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(37, 99, 235, 0.2);
+}
+
+/* ---------- Header ---------- */
+.lc-header {
+    background: linear-gradient(to bottom, #fff6e5, #ffbd59, #f59e2f);
+    padding: 70px 40px 32px;
+    text-align: center;
+}
+
+.lc-badge {
+    display: inline-block;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: black;
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-bottom: 14px;
+    font-family: sans-serif;
+}
+
+.lc-title {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    letter-spacing: -0.5px;
+}
+
+.lc-subtitle {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* ---------- Body ---------- */
+.lc-body {
+    padding: 35px 25px 40px;
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 32px;
+    align-items: start;
+}
+
+/* ---------- Two-Column Layout ---------- */
+.lc-left-col {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    flex-shrink: 0;
+}
+
+.lc-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* ---------- Input Section ---------- */
+.lc-input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 0;
+}
+
+.lc-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lc-input-label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.lc-input-label {
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+}
+
+/* ---------- Type Box (text input) ---------- */
+.lc-type-box {
+    display: flex;
+    align-items: center;
+    background: #111e35;
+    border: 1px solid #1e3a5f;
+    border-radius: 8px;
+    padding: 5px 10px;
+    gap: 4px;
+    cursor: text;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.lc-type-box:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+.lc-type-prefix {
+    color: #60a5fa;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.lc-type-suffix {
+    color: #60a5fa;
+    font-size: 20px;
+    font-family: sans-serif;
+    white-space: nowrap;
+}
+
+.lc-type-input {
+    background: transparent;
+    border: none;
+    color: #e0eaff;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 90px;
+    text-align: right;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.lc-type-input::-webkit-inner-spin-button,
+.lc-type-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ---------- Slider ---------- */
+.lc-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.lc-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2563eb;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.6);
+    transition: box-shadow 0.2s;
+}
+
+.lc-slider::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 14px rgba(37, 99, 235, 0.95);
+}
+
+.lc-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #2563eb;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 6px rgba(37, 99, 235, 0.6);
+}
+
+.lc-slider-range {
+    display: flex;
+    justify-content: space-between;
+    color: #bde4e4;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-top: 4px;
+}
+
+/* ---------- Results Section ---------- */
+.lc-results {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* ---------- EMI Box ---------- */
+.lc-emi-box {
+    background: linear-gradient(135deg, #0a1a40, #1e3a6e);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    border-radius: 14px;
+    padding: 28px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lc-emi-label {
+    color: #bfdbfe;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.lc-emi-sub {
+    color: #475569;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 2px;
+}
+
+.lc-emi-value {
+    color: #fff;
+    font-size: clamp(16px, 2.2vw, 30px);
+    font-weight: bold;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 55%;
+    text-align: right;
+}
+
+/* ---------- Stats Row ---------- */
+.lc-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.lc-stat-card {
+    background: #111e35;
+    border-radius: 12px;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    overflow: hidden;
+}
+
+/* Top border colors per card type */
+.lc-stat-blue {
+    border-top: 3px solid #2563eb;
+}
+
+.lc-stat-amber {
+    border-top: 3px solid #f59e0b;
+}
+
+.lc-stat-purple {
+    border-top: 3px solid #7c3aed;
+}
+
+.lc-stat-label {
+    color: honeydew;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.lc-stat-value {
+    font-size: clamp(12px, 1.8vw, 27px);
+    font-weight: bold;
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Value colors */
+.lc-stat-value-blue {
+    color: #2563eb;
+}
+
+.lc-stat-value-amber {
+    color: #f59e0b;
+}
+
+.lc-stat-value-purple {
+    color: #7c3aed;
+}
+
+/* ---------- Pie Chart ---------- */
+.lc-chart-wrapper {
+    position: relative;
+    background: #111e35;
+    border-radius: 14px;
+    padding: 20px 0 10px;
+}
+
+.lc-chart-title {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+
+.lc-chart-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52%);
+    text-align: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.lc-chart-percent {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.lc-chart-center-label {
+    display: block;
+    color: #60a5fa;
+    font-size: 11px;
+    font-family: sans-serif;
+}
+
+.lc-legend-label {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* ===================== */
+/* BREAKPOINT: 1024px    */
+/* ===================== */
+@media (max-width: 1024px) {
+
+    .lc-wrapper {
+        padding: 24px 12px;
+    }
+
+    .lc-card {
+        max-width: 900px;
+        border-radius: 16px;
+    }
+
+    .lc-header {
+        padding: 50px 30px 26px;
+    }
+
+    .lc-title {
+        font-size: 38px;
+    }
+
+    .lc-subtitle {
+        font-size: 13px;
+    }
+
+    .lc-body {
+        padding: 28px 20px 32px;
+        grid-template-columns: 360px 1fr;
+        gap: 24px;
+    }
+
+    .lc-left-col {
+        width: 360px;
+    }
+
+    .lc-input-section {
+        gap: 36px;
+    }
+
+    .lc-input-label {
+        font-size: 15px;
+    }
+
+    .lc-type-prefix {
+        font-size: 20px;
+    }
+
+    .lc-type-suffix {
+        font-size: 16px;
+    }
+
+    .lc-type-input {
+        font-size: 17px;
+        width: 75px;
+    }
+
+    .lc-emi-box {
+        padding: 22px 22px;
+        margin-bottom: 16px;
+    }
+
+    .lc-emi-label {
+        font-size: 20px;
+    }
+
+    .lc-emi-sub {
+        font-size: 13px;
+    }
+
+    .lc-emi-value {
+        font-size: clamp(14px, 2vw, 24px);
+    }
+
+    .lc-stats-row {
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .lc-stat-card {
+        padding: 12px 16px;
+        gap: 6px;
+    }
+
+    .lc-stat-label {
+        font-size: 16px;
+    }
+
+    .lc-stat-value {
+        font-size: clamp(11px, 1.6vw, 22px);
+    }
+
+    .lc-chart-percent {
+        font-size: 18px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 768px     */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .lc-wrapper {
+        padding: 18px 10px;
+    }
+
+    .lc-card {
+        border-radius: 14px;
+        margin-top: 25px;
+    }
+
+    .lc-header {
+        padding: 32px 20px 22px;
+    }
+
+    .lc-badge {
+        font-size: 9px;
+        padding: 8px 18px;
+        letter-spacing: 2px;
+    }
+
+    .lc-title {
+        font-size: 26px;
+    }
+
+    .lc-subtitle {
+        font-size: 12px;
+    }
+
+    .lc-body {
+        padding: 22px 16px 26px;
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .lc-left-col {
+        width: 100%;
+    }
+
+    .lc-input-section {
+        gap: 28px;
+    }
+
+    .lc-input-label-row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .lc-input-label {
+        font-size: 14px;
+    }
+
+    .lc-type-prefix {
+        font-size: 18px;
+    }
+
+    .lc-type-suffix {
+        font-size: 14px;
+    }
+
+    .lc-type-input {
+        font-size: 15px;
+        width: 65px;
+    }
+
+    .lc-slider-range {
+        font-size: 12px;
+    }
+
+    .lc-emi-box {
+        flex-direction: row;
+        padding: 18px 18px;
+        margin-bottom: 14px;
+        border-radius: 12px;
+    }
+
+    .lc-emi-label {
+        font-size: 18px;
+    }
+
+    .lc-emi-sub {
+        font-size: 12px;
+    }
+
+    .lc-emi-value {
+        font-size: 22px;
+    }
+
+    .lc-stats-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .lc-stat-card {
+        padding: 12px 12px;
+        gap: 5px;
+        border-radius: 10px;
+    }
+
+    .lc-stat-label {
+        font-size: 13px;
+    }
+
+    .lc-stat-value {
+        font-size: 18px;
+    }
+
+    .lc-chart-wrapper {
+        border-radius: 12px;
+    }
+
+    .lc-chart-percent {
+        font-size: 17px;
+    }
+
+    .lc-chart-center-label {
+        font-size: 10px;
+    }
+
+    .lc-legend-label {
+        font-size: 12px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 425px     */
+/* ===================== */
+@media (max-width: 425px) {
+
+    .lc-wrapper {
+        padding: 12px 6px;
+    }
+
+    .lc-card {
+        border-radius: 12px;
+        margin-top: 30px;
+    }
+
+    .lc-header {
+        padding: 22px 14px 16px;
+    }
+
+    .lc-badge {
+        font-size: 8px;
+        padding: 6px 14px;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+    }
+
+    .lc-title {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .lc-subtitle {
+        font-size: 10px;
+    }
+
+    .lc-body {
+        padding: 16px 12px 20px;
+        gap: 20px;
+    }
+
+    .lc-input-section {
+        gap: 22px;
+    }
+
+    .lc-input-label-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lc-input-label {
+        font-size: 12px;
+    }
+
+    .lc-type-box {
+        padding: 4px 8px;
+        gap: 3px;
+        border-radius: 6px;
+    }
+
+    .lc-type-prefix {
+        font-size: 15px;
+    }
+
+    .lc-type-suffix {
+        font-size: 12px;
+    }
+
+    .lc-type-input {
+        font-size: 13px;
+        width: 54px;
+    }
+
+    .lc-slider-range {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    .lc-emi-box {
+        flex-direction: row;
+        padding: 14px 14px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .lc-emi-label {
+        font-size: 14px;
+    }
+
+    .lc-emi-sub {
+        font-size: 10px;
+    }
+
+    .lc-emi-value {
+        font-size: 17px;
+    }
+
+    .lc-stats-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .lc-stat-card {
+        padding: 10px 8px;
+        gap: 4px;
+        border-radius: 8px;
+    }
+
+    .lc-stat-label {
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .lc-stat-value {
+        font-size: 14px;
+    }
+
+    .lc-chart-wrapper {
+        padding: 14px 0 8px;
+        border-radius: 10px;
+    }
+
+    .lc-chart-title {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .lc-chart-percent {
+        font-size: 14px;
+    }
+
+    .lc-chart-center-label {
+        font-size: 9px;
+    }
+
+    .lc-legend-label {
+        font-size: 10px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 375px     */
+/* ===================== */
+@media (max-width: 375px) {
+
+    .lc-header {
+        padding: 18px 12px 14px;
+    }
+
+    .lc-badge {
+        font-size: 7.5px;
+        padding: 5px 12px;
+    }
+
+    .lc-title {
+        font-size: 17px;
+    }
+
+    .lc-subtitle {
+        font-size: 9px;
+    }
+
+    .lc-body {
+        padding: 13px 10px 16px;
+        gap: 16px;
+    }
+
+    .lc-input-section {
+        gap: 18px;
+    }
+
+    .lc-input-label {
+        font-size: 10.5px;
+    }
+
+    .lc-type-prefix {
+        font-size: 13px;
+    }
+
+    .lc-type-suffix {
+        font-size: 10px;
+    }
+
+    .lc-type-input {
+        font-size: 11px;
+        width: 46px;
+    }
+
+    .lc-slider-range {
+        font-size: 9px;
+    }
+
+    .lc-emi-box {
+        padding: 12px 11px;
+        margin-bottom: 10px;
+        border-radius: 9px;
+    }
+
+    .lc-emi-label {
+        font-size: 12px;
+    }
+
+    .lc-emi-sub {
+        font-size: 9px;
+    }
+
+    .lc-emi-value {
+        font-size: 15px;
+    }
+
+    .lc-stats-row {
+        gap: 6px;
+        margin-bottom: 10px;
+    }
+
+    .lc-stat-card {
+        padding: 8px 6px;
+        gap: 3px;
+    }
+
+    .lc-stat-label {
+        font-size: 9px;
+    }
+
+    .lc-stat-value {
+        font-size: 12px;
+    }
+
+    .lc-chart-percent {
+        font-size: 12px;
+    }
+
+    .lc-chart-center-label {
+        font-size: 8px;
+    }
+
+    .lc-legend-label {
+        font-size: 9px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 320px     */
+/* ===================== */
+@media (max-width: 320px) {
+
+    .lc-wrapper {
+        padding: 8px 4px;
+    }
+
+    .lc-card {
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .lc-header {
+        padding: 14px 8px 11px;
+    }
+
+    .lc-badge {
+        font-size: 6.5px;
+        padding: 4px 10px;
+        letter-spacing: 1px;
+        margin-bottom: 7px;
+    }
+
+    .lc-title {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .lc-subtitle {
+        font-size: 8px;
+    }
+
+    .lc-body {
+        padding: 10px 8px 13px;
+        gap: 13px;
+    }
+
+    .lc-input-section {
+        gap: 14px;
+    }
+
+    .lc-input-label-row {
+        gap: 6px;
+    }
+
+    .lc-input-label {
+        font-size: 9px;
+    }
+
+    .lc-type-box {
+        padding: 3px 6px;
+        gap: 2px;
+        border-radius: 5px;
+    }
+
+    .lc-type-prefix {
+        font-size: 11px;
+    }
+
+    .lc-type-suffix {
+        font-size: 9px;
+    }
+
+    .lc-type-input {
+        font-size: 9.5px;
+        width: 38px;
+    }
+
+    .lc-slider-range {
+        font-size: 7.5px;
+        margin-top: 2px;
+    }
+
+    .lc-emi-box {
+        padding: 10px 8px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        gap: 6px;
+    }
+
+    .lc-emi-label {
+        font-size: 10px;
+    }
+
+    .lc-emi-sub {
+        font-size: 7.5px;
+    }
+
+    .lc-emi-value {
+        font-size: 12px;
+    }
+
+    .lc-stats-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        margin-bottom: 8px;
+    }
+
+    .lc-stat-card {
+        padding: 6px 5px;
+        gap: 2px;
+        border-radius: 7px;
+    }
+
+    .lc-stat-label {
+        font-size: 7.5px;
+    }
+
+    .lc-stat-value {
+        font-size: 10px;
+    }
+
+    .lc-chart-wrapper {
+        padding: 10px 0 6px;
+        border-radius: 8px;
+    }
+
+    .lc-chart-title {
+        font-size: 8px;
+        margin-bottom: 4px;
+    }
+
+    .lc-chart-percent {
+        font-size: 10px;
+    }
+
+    .lc-chart-center-label {
+        font-size: 7px;
+    }
+
+    .lc-legend-label {
+        font-size: 8px;
+    }
+}

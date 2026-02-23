@@ -1,0 +1,1095 @@
+.bl-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.bl-popup {
+    background: white;
+    padding: 20px 50px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.bl-popup h3 {
+    font-size: 25px;
+}
+
+.bl-popup-btn-whatsapp {
+    display: flex;
+    font-size: 20px;
+    width: 200px;
+    margin: 25px 0px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #25d366;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bl-popup-btn-whatsapp:hover {
+    background-color: rgba(0, 128, 0, 0.769);
+}
+
+
+.bl-popup-btn-whatsapp i {
+    color: white;
+    font-size: 35px;
+}
+
+
+.bl-popup-btn-call {
+    display: flex;
+    width: 200px;
+    margin: 20px 0;
+    padding: 18px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #29606d;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bl-popup-btn-call i {
+    color: white;
+    font-size: 25px;
+}
+
+.bl-popup-btn-call:hover {
+    background-color: #358395;
+}
+
+.bl-close-btn {
+    background: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 40px;
+}
+
+.bl-container {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    height: 950px;
+    border-bottom: 1px solid #c1c0be;
+}
+
+/* HERO SECTION */
+.bl-hero {
+    position: relative;
+    width: 100%;
+}
+
+.bl-bg {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 75px;
+}
+
+/* BUTTON */
+.bl-btn {
+    background: linear-gradient(to right, #f6a04d, #ffb347);
+    border: none;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 45px;
+    position: absolute;
+    bottom: 358px;
+    right: 230px;
+}
+
+.bl-btn:hover {
+    background: linear-gradient(to right, #ffb347, #f6a04d);
+}
+
+/* DESCRIPTION SECTION */
+.bl-description {
+    padding-left: 46px;
+    font-size: 40px;
+    line-height: 1.4;
+    text-align: left;
+    width: 1125px;
+}
+
+/* LEAF IMAGE */
+.bl-leaf {
+    position: absolute;
+    right: 118px;
+    bottom: 0px;
+    width: 225px;
+}
+
+
+
+/* bl-details section  */
+.bl-details {
+    width: 100%;
+    padding: 20px 20px;
+    font-family: "Georgia", serif;
+    text-align: center;
+    border-bottom: 1px solid #c1c0be;
+}
+
+/* TITLE */
+.bl-title {
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.bl-title span {
+    color: #f6a04d
+}
+
+/* MAIN BOX */
+.bl-box {
+    width: 900px;
+    margin: 0px 250px;
+    background: #ffffff;
+    border: 1px solid black;
+    padding: 30px;
+}
+
+/* ROW */
+.bl-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-align: left;
+    padding: 28px 0;
+}
+
+.bl-row img {
+    width: 150px;
+    height: 200px;
+}
+
+.bl-d-text {
+    width: 585px;
+}
+
+.bl-row h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.bl-row p {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bl-row-reverse h3 {
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.bl-row-reverse p {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+    text-align: right;
+}
+
+/* Divider */
+hr {
+    border: none;
+    border-top: 1px solid black;
+}
+
+
+
+/* fybf section */
+
+.bl-fybf-section {
+    width: 100%;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #c1c0be;
+}
+
+/* TITLE */
+.bl-fybf-title {
+    font-size: 52px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid black;
+    width: 620px;
+    padding-bottom: 18px;
+    margin-left: 375px;
+}
+
+.bl-fybf-title span {
+    color: #f6a04d;
+}
+
+/* CONTAINER */
+.bl-fybf-container {
+    width: 885px;
+    margin: 0px 190px;
+}
+
+/* ROW */
+.bl-fybf-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0;
+    gap: 50px;
+}
+
+.bl-fybf-row img {
+    width: 200px;
+}
+
+.bl-fybf-row h3 {
+    width: 757px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.bl-fybf-row:not(.bl-fybf-row-reverse) h3 {
+    text-align: left;
+}
+
+.bl-fybf-row-reverse h3 {
+    text-align: right;
+}
+
+/* STRING IMAGES */
+.bl-fybf-string {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+}
+
+
+
+/* f SECTION */
+/* SECTION */
+.bl-f-section {
+    width: 100%;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.bl-f-container {
+    display: flex;
+    border: 1px solid #bdbdbd;
+    background: #ffffff;
+}
+
+/* LEFT SIDE */
+.bl-f-left {
+    width: 50%;
+    background: #fff9e9;
+    padding: 60px;
+    box-sizing: border-box;
+    border: 1px solid #a9a5a0;
+}
+
+.bl-f-title {
+    font-size: 50px;
+    color: #0f5c63;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.bl-f-subtitle {
+    font-size: 33px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* RIGHT SIDE */
+.bl-f-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border: 1px solid #a9a5a0;
+}
+
+.bl-f-right img {
+    width: 100%;
+}
+
+/* BUTTONS */
+.bl-f-btn-wrapper {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+}
+
+.bl-f-btn {
+    padding: 35px 35px;
+    font-size: 35px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* APPLY BUTTON */
+.bl-f-apply {
+    background: #f29c1f;
+    color: #fff;
+}
+
+.bl-f-apply:hover {
+    background: #f17806;
+}
+
+/* CONTACT BUTTON */
+.bl-f-contact {
+    background: #0f5c63;
+    color: #fff;
+}
+
+.bl-f-contact:hover {
+    background: #227a8e;
+}
+
+/* ===================== */
+/* BREAKPOINT: 1024px    */
+/* ===================== */
+@media (max-width: 1024px) {
+
+    .bl-container {
+        height: auto;
+    }
+
+    .bl-bg {
+        margin-top: 50px;
+    }
+
+    .bl-btn {
+        font-size: 36px;
+        padding: 15px 30px;
+        bottom: 225px;
+        right: 130px;
+    }
+
+    .bl-description {
+        font-size: 26px;
+        width: 83%;
+        padding-left: 20px;
+    }
+
+    .bl-leaf {
+        width: 160px;
+        right: 40px;
+    }
+
+    /* Details */
+    .bl-title {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .bl-box {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .bl-row {
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .bl-row img {
+        width: 110px;
+        height: 150px;
+    }
+
+    .bl-d-text {
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-row h3,
+    .bl-row-reverse h3 {
+        font-size: 22px;
+    }
+
+    .bl-row p,
+    .bl-row-reverse p {
+        font-size: 17px;
+    }
+
+    /* FYBF */
+    .bl-fybf-title {
+        font-size: 38px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bl-fybf-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .bl-fybf-row {
+        gap: 30px;
+    }
+
+    .bl-fybf-row img {
+        width: 140px;
+    }
+
+    .bl-fybf-row h3 {
+        font-size: 28px;
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-fybf-string {
+        width: 160px;
+    }
+
+    /* F Section */
+    .bl-f-section {
+        padding: 40px 30px;
+    }
+
+    .bl-f-title {
+        font-size: 36px;
+    }
+
+    .bl-f-subtitle {
+        font-size: 24px;
+    }
+
+    .bl-f-btn {
+        font-size: 30px;
+        padding: 25px 45px;
+    }
+
+    .bl-f-btn-wrapper {
+        gap: 105px;
+        margin-top: 35px;
+    }
+
+    /* Popup */
+    .bl-popup {
+        width: 260px;
+        padding: 20px 30px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 768px     */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .bl-container {
+        height: auto;
+    }
+
+    .bl-bg {
+        margin-top: 57px;
+    }
+
+    .bl-btn {
+        font-size: 23px;
+        padding: 8px 16px;
+        bottom: 180px;
+        right: 115px;
+    }
+
+    .bl-description {
+        font-size: 20px;
+        width: 85%;
+        padding-left: 14px;
+    }
+
+    .bl-leaf {
+        width: 120px;
+        right: 10px;
+    }
+
+    /* Details */
+    .bl-title {
+        font-size: 28px;
+        margin-bottom: 22px;
+    }
+
+    .bl-box {
+        width: 95%;
+        margin: 0 auto;
+        padding: 16px;
+    }
+
+    .bl-row {
+        gap: 20px;
+        padding: 16px 0;
+    }
+
+    .bl-row img {
+        width: 85px;
+        height: 115px;
+    }
+
+    .bl-d-text {
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-row h3,
+    .bl-row-reverse h3 {
+        font-size: 18px;
+    }
+
+    .bl-row p,
+    .bl-row-reverse p {
+        font-size: 14px;
+    }
+
+    /* FYBF */
+    .bl-fybf-title {
+        font-size: 28px;
+        width: 325px;
+        padding-bottom: 12px;
+    }
+
+    .bl-fybf-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .bl-fybf-row {
+        gap: 18px;
+    }
+
+    .bl-fybf-row img {
+        width: 100px;
+    }
+
+    .bl-fybf-row h3 {
+        font-size: 20px;
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-fybf-string {
+        width: 120px;
+    }
+
+    /* F Section */
+    .bl-f-section {
+        padding: 30px 16px;
+    }
+
+    .bl-f-container {
+        flex-direction: row;
+    }
+
+    .bl-f-left {
+        width: 55%;
+        padding: 30px 20px;
+    }
+
+    .bl-f-right {
+        width: 45%;
+        padding: 20px 10px;
+    }
+
+    .bl-f-title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+    .bl-f-subtitle {
+        font-size: 17px;
+    }
+
+    .bl-f-btn {
+        font-size: 23px;
+        padding: 15px 31px;
+    }
+
+    .bl-f-btn-wrapper {
+        gap: 60px;
+        margin-top: 24px;
+        flex-direction: row;
+    }
+
+    /* Popup */
+    .bl-popup {
+        width: 220px;
+        padding: 16px 24px;
+    }
+
+    .bl-popup h3 {
+        font-size: 20px;
+    }
+
+    .bl-popup-btn-whatsapp,
+    .bl-popup-btn-call {
+        font-size: 16px;
+        width: 170px;
+        padding: 12px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 425px     */
+/* ===================== */
+@media (max-width: 425px) {
+
+    .bl-container {
+        height: auto;
+    }
+
+    .bl-bg {
+        margin-top: 48px;
+    }
+
+    .bl-btn {
+        font-size: 15px;
+        padding: 6px 12px;
+        bottom: 92px;
+        right: 45px;
+        border-radius: 20px;
+    }
+
+    .bl-description {
+        font-size: 11px;
+        width: 81%;
+        padding-left: 8px;
+    }
+
+    .bl-leaf {
+        width: 75px;
+        right: 4px;
+    }
+
+    /* Details */
+    .bl-details {
+        padding: 12px 8px;
+    }
+
+    .bl-title {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .bl-box {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .bl-row {
+        gap: 12px;
+        padding: 10px 0;
+    }
+
+    .bl-row img {
+        width: 60px;
+        height: 80px;
+    }
+
+    .bl-d-text {
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-row h3,
+    .bl-row-reverse h3 {
+        font-size: 13px;
+        margin-bottom: 4px;
+    }
+
+    .bl-row p,
+    .bl-row-reverse p {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    /* FYBF */
+    .bl-fybf-section {
+        padding: 20px 8px;
+    }
+
+    .bl-fybf-title {
+        font-size: 18px;
+        width: 225px;
+        margin-bottom: 28px;
+    }
+
+    .bl-fybf-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bl-fybf-row {
+        gap: 10px;
+    }
+
+    .bl-fybf-row img {
+        width: 65px;
+    }
+
+    .bl-fybf-row h3 {
+        font-size: 13px;
+        width: auto;
+        flex: 1;
+    }
+
+    .bl-fybf-string {
+        width: 80px;
+    }
+
+    /* F Section */
+    .bl-f-section {
+        padding: 20px 8px;
+    }
+
+    .bl-f-container {
+        flex-direction: row;
+    }
+
+    .bl-f-left {
+        width: 55%;
+        padding: 16px 10px;
+    }
+
+    .bl-f-right {
+        width: 45%;
+        padding: 10px 6px;
+    }
+
+    .bl-f-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .bl-f-subtitle {
+        font-size: 11px;
+        line-height: 1.4;
+    }
+
+    .bl-f-btn {
+        font-size: 15px;
+        padding: 10px 20px;
+        border-radius: 16px;
+    }
+
+    .bl-f-btn-wrapper {
+        gap: 35px;
+        margin-top: 14px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Popup */
+    .bl-popup {
+        width: 200px;
+        padding: 14px 16px;
+    }
+
+    .bl-popup h3 {
+        font-size: 16px;
+    }
+
+    .bl-popup-btn-whatsapp,
+    .bl-popup-btn-call {
+        font-size: 16px;
+        width: 140px;
+        margin-left: 15px;
+        gap: 10px;
+        margin-bottom: 24px;
+    }
+
+    .bl-popup-btn-whatsapp i {
+        font-size: 22px;
+    }
+
+    .bl-popup-btn-call i {
+        font-size: 18px;
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 375px     */
+/* ===================== */
+@media (max-width: 375px) {
+
+    .bl-btn {
+        font-size: 12px;
+        padding: 6px 16px;
+        bottom: 80px;
+        right: 40px;
+    }
+
+    .bl-description {
+        font-size: 11px;
+        width: 80%;
+    }
+
+    .bl-leaf {
+        width: 70px;
+    }
+
+    /* Details */
+    .bl-title {
+        font-size: 17px;
+    }
+
+    .bl-row img {
+        width: 50px;
+        height: 68px;
+    }
+
+    .bl-row h3,
+    .bl-row-reverse h3 {
+        font-size: 11px;
+    }
+
+    .bl-row p,
+    .bl-row-reverse p {
+        font-size: 9.5px;
+    }
+
+    /* FYBF */
+    .bl-fybf-title {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .bl-fybf-row img {
+        width: 52px;
+    }
+
+    .bl-fybf-row h3 {
+        font-size: 11px;
+    }
+
+    .bl-fybf-string {
+        width: 65px;
+    }
+
+    /* F Section */
+    .bl-f-title {
+        font-size: 13px;
+    }
+
+    .bl-f-subtitle {
+        font-size: 9.5px;
+    }
+
+    .bl-f-btn {
+        font-size: 11px;
+        padding: 10px 21px;
+    }
+
+    .bl-f-btn-wrapper {
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    /* Popup */
+    .bl-popup {
+        width: 180px;
+        padding: 12px 14px;
+    }
+
+    .bl-popup h3 {
+        font-size: 14px;
+    }
+
+    .bl-popup-btn-whatsapp,
+    .bl-popup-btn-call {
+        font-size: 13px;
+        width: 125px;
+        margin-left: 16px;
+        gap: 8px
+    }
+}
+
+
+/* ===================== */
+/* BREAKPOINT: 320px     */
+/* ===================== */
+@media (max-width: 320px) {
+
+    .bl-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+        bottom: 68px;
+        right: 35px;
+        border-radius: 12px;
+    }
+
+    .bl-description {
+        font-size: 9px;
+        padding-left: 5px;
+    }
+
+    .bl-leaf {
+        width: 57px;
+    }
+
+    /* Details */
+    .bl-title {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .bl-box {
+        padding: 6px;
+    }
+
+    .bl-row {
+        gap: 8px;
+        padding: 6px 0;
+    }
+
+    .bl-row img {
+        width: 40px;
+        height: 55px;
+    }
+
+    .bl-row h3,
+    .bl-row-reverse h3 {
+        font-size: 9px;
+        margin-bottom: 2px;
+    }
+
+    .bl-row p,
+    .bl-row-reverse p {
+        font-size: 8px;
+        line-height: 1.3;
+    }
+
+    /* FYBF */
+    .bl-fybf-section {
+        padding: 12px 4px;
+    }
+
+    .bl-fybf-title {
+        font-size: 12px;
+        margin-bottom: 14px;
+        padding-bottom: 6px;
+        width: 145px;
+    }
+
+    .bl-fybf-row {
+        gap: 6px;
+    }
+
+    .bl-fybf-row img {
+        width: 42px;
+    }
+
+    .bl-fybf-row h3 {
+        font-size: 9px;
+    }
+
+    .bl-fybf-string {
+        width: 50px;
+    }
+
+    /* F Section */
+    .bl-f-section {
+        padding: 12px 4px;
+    }
+
+    .bl-f-left {
+        padding: 10px 6px;
+    }
+
+    .bl-f-right {
+        padding: 6px 4px;
+    }
+
+    .bl-f-title {
+        font-size: 10px;
+        margin-bottom: 6px;
+    }
+
+    .bl-f-subtitle {
+        font-size: 8px;
+        line-height: 1.3;
+    }
+
+    .bl-f-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+        border-radius: 10px;
+    }
+
+    .bl-f-btn-wrapper {
+        gap: 35px;
+        margin-top: 8px;
+    }
+
+    /* Popup */
+    .bl-popup {
+        width: 155px;
+        padding: 14px 20px;
+    }
+
+    .bl-popup h3 {
+        font-size: 12px;
+    }
+
+    .bl-popup-btn-whatsapp,
+    .bl-popup-btn-call {
+        font-size: 10px;
+        width: 105px;
+        margin-left: 7px;
+        gap: 6px;
+        border-radius: 10px;
+
+    }
+
+    .bl-popup-btn-whatsapp i {
+        font-size: 16px;
+    }
+
+    .bl-popup-btn-call i {
+        font-size: 14px;
+    }
+
+    .bl-close-btn {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,891 @@
+.fp-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+  width: 100%;
+}
+
+
+.fp-hero {
+  width: 100%;
+}
+
+
+.fp-hero-content {
+  width: 100%;
+  height: 955px;
+  background-size: cover;
+  background-position: center 45px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+
+.logoimg {
+  width: 75px;
+  margin-bottom: 16px;
+  margin-left: 155px;
+}
+
+.fp-hero-content h1 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+
+.fp-hero-overlay p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+/* what is financial planning*/
+.fp-section {
+  width: 100%;
+  margin: 50px 0;
+}
+
+.fp-section-title {
+  width: 100%;
+  height: 604px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  border-top: 1px solid #c27f39;
+
+}
+
+.fp-section-title h2 {
+  position: absolute;
+  font-size: 53px;
+  font-weight: 600;
+  color: #2b5f6a;
+  line-height: 1.2;
+  left: 77px;
+  top: 70px;
+  width: 409px
+}
+
+.fp-text-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #fff;
+  position: relative;
+  padding: 42px 0px;
+}
+
+.human {
+  width: 500px;
+  height: 600px;
+}
+
+.fp-text {
+  font-size: 30px;
+  color: #4a4a4a;
+  font-family: "Georgia", serif;
+  width: 720px;
+  position: absolute;
+  right: 305px;
+  top: 75px;
+  text-align: end;
+  line-height: 1.2;
+}
+
+
+.fp-text span {
+  color: #e58a2a;
+  display: block;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 500
+}
+
+.leaf {
+  width: 259px;
+  height: 522px;
+}
+
+
+
+/* Who is this for */
+.fp-section-light {
+  border-bottom: 2px solid #c27f39;
+  position: relative;
+}
+
+.fp-section-image {
+  width: 100%;
+  margin-top: -55px;
+}
+
+.fp-light-title {
+  text-align: center;
+  font-size: 45px;
+  color: #29606d;
+  margin-bottom: 50px;
+  position: relative;
+  font-weight: 400;
+}
+
+/* .fp-light-title h2{
+  position: absolute;
+  top: 15px;
+}  */
+
+.fp-light-title::after {
+  content: "";
+  width: 370px;
+  height: 3px;
+  background-color: #c27f39;
+  display: block;
+  margin: 12px auto 0
+}
+
+.fp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  width: 900px;
+  margin: 50px 305px;
+}
+
+.fp-item {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.fp-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+
+.fp-item p {
+  font-size: 35px;
+  color: #29606d;
+  margin: 0;
+  font-weight: 600;
+}
+
+.fp-item p.highlight {
+  color: #f19a16;
+}
+
+
+/* Cards */
+.fp-approch {
+  width: 100%;
+}
+
+.fp-approch h2 {
+  text-align: center;
+  font-size: 45px;
+
+}
+
+.fp-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 980px;
+  margin-left: 225px;
+}
+
+.fp-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 102px;
+  background: #ffffff;
+  border: 1.5px solid #8bb6bc;
+  padding: 35px 46px;
+  margin-bottom: 30px
+}
+
+.fp-im img {
+  width: 271px;
+  height: 200px;
+}
+
+.fp-app-text {
+  max-width: 600px;
+}
+
+.fp-card h3 {
+  font-size: 25px;
+  color: #f2a900;
+}
+
+.fp-card p {
+  font-size: 25px;
+  line-height: 1.3;
+  color: #333;
+  margin-top: 10px;
+}
+
+.fp-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* ============================================================
+   BREAKPOINT: 1024px (Tablet Landscape)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  .fp-hero-content {
+    height: 700px;
+    padding-left: 50px;
+  }
+
+  .logoimg {
+    width: 60px;
+    margin-left: 80px;
+  }
+
+  .fp-hero-content h1 {
+    font-size: 40px;
+  }
+
+  .fp-hero-overlay p {
+    font-size: 20px;
+  }
+
+  /* What is financial planning */
+  .fp-section-title {
+    height: 450px;
+  }
+
+  .fp-section-title h2 {
+    font-size: 38px;
+    left: 50px;
+    top: 50px;
+    width: 320px;
+  }
+
+  .fp-text-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 30px 30px;
+  }
+
+  .human {
+    width: 340px;
+    height: 400px;
+    flex-shrink: 0;
+  }
+
+  .fp-text {
+    font-size: 22px;
+    width: auto;
+    position: static;
+    text-align: end;
+    flex: 1;
+    padding-left: 20px;
+    top: unset;
+    right: unset;
+  }
+
+  .fp-text span {
+    font-size: 22px;
+  }
+
+  .leaf {
+    width: 180px;
+    height: 360px;
+    flex-shrink: 0;
+  }
+
+  /* Who is this for */
+  .fp-light-title {
+    font-size: 34px;
+  }
+
+  .fp-light-title::after {
+    width: 280px;
+  }
+
+  .fp-list {
+    margin: 40px 160px;
+    gap: 28px;
+  }
+
+  .fp-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .fp-item p {
+    font-size: 26px;
+  }
+
+  /* Cards */
+  .fp-approch h2 {
+    font-size: 34px;
+  }
+
+  .fp-cards {
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .fp-card {
+    gap: 40px;
+    padding: 25px 30px;
+  }
+
+  .fp-im img {
+    width: 200px;
+    height: 150px;
+  }
+
+  .fp-card h3 {
+    font-size: 20px;
+  }
+
+  .fp-card p {
+    font-size: 20px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 768px (Tablet Portrait)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .fp-hero {
+    height: 625px;
+  }
+
+  .fp-hero-content {
+    height: 560px;
+    padding-left: 30px;
+  }
+
+  .logoimg {
+    width: 55px;
+    margin-left: 90px;
+    margin-bottom: 60px;
+  }
+
+  .fp-hero-content h1 {
+    font-size: 32px;
+  }
+
+  .fp-hero-overlay p {
+    font-size: 17px;
+  }
+
+  /* What is financial planning */
+  .fp-section-title {
+    height: 360px;
+  }
+
+  .fp-section-title h2 {
+    font-size: 30px;
+    left: 30px;
+    top: 40px;
+    width: 260px;
+  }
+
+  .fp-text-content {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .human {
+    width: 240px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .fp-text {
+    font-size: 17px;
+    padding: 25px 20px 10px 0px;
+  }
+
+  .fp-text span {
+    font-size: 17px;
+  }
+
+  .leaf {
+    width: 120px;
+    height: 285px;
+    flex-shrink: 0;
+  }
+
+  /* Who is this for */
+  .fp-light-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .fp-light-title::after {
+    width: 200px;
+  }
+
+  .fp-list {
+    margin: 30px 100px;
+    gap: 22px;
+  }
+
+  .fp-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .fp-item p {
+    font-size: 20px;
+  }
+
+  /* Cards */
+  .fp-approch h2 {
+    font-size: 26px;
+    padding: 0 20px;
+  }
+
+  .fp-cards {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .fp-card {
+    gap: 24px;
+    padding: 20px 20px;
+  }
+
+  .fp-im img {
+    width: 160px;
+    height: 120px;
+  }
+
+  .fp-card h3 {
+    font-size: 17px;
+  }
+
+  .fp-card p {
+    font-size: 17px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 425px (Mobile Large)
+   ============================================================ */
+@media (max-width: 425px) {
+
+  .fp-hero {
+    height: 460px;
+  }
+
+  .fp-hero-content {
+    height: 400px;
+    padding-left: 20px;
+    align-items: flex-start;
+  }
+
+  .logoimg {
+    width: 38px;
+    margin-left: 55px;
+    margin-bottom: 35px;
+    margin-top: 25px;
+  }
+
+  .fp-hero-content h1 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .fp-hero-overlay p {
+    font-size: 14px;
+  }
+
+  /* What is financial planning */
+  .fp-section-title {
+    height: 260px;
+  }
+
+  .fp-section-title h2 {
+    font-size: 22px;
+    left: 20px;
+    top: 28px;
+    width: 200px;
+  }
+
+  .fp-text-content {
+    padding: 16px 14px;
+    gap: 0px;
+  }
+
+  .human {
+    width: 140px;
+    height: 180px;
+  }
+
+  .fp-text {
+    font-size: 10px;
+    padding: 0px 10px 10px 0px;
+
+  }
+
+  .fp-text span {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .leaf {
+    width: 70px;
+    height: 170px;
+    /* flex-shrink: 0; */
+  }
+
+  /* Who is this for */
+  .fp-light-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .fp-light-title::after {
+    width: 150px;
+  }
+
+  .fp-list {
+    width: auto;
+    margin: 20px 20px;
+    gap: 16px;
+  }
+
+  .fp-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .fp-item {
+    gap: 16px;
+  }
+
+  .fp-item p {
+    font-size: 16px;
+  }
+
+  /* Cards */
+  .fp-approch h2 {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+
+  .fp-cards {
+    width: auto;
+    margin-left: 14px;
+    margin-right: 14px;
+    gap: 14px;
+  }
+
+  .fp-card {
+    flex-direction: row !important;
+    gap: 14px;
+    padding: 14px 14px;
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+
+  .fp-card:nth-child(even) {
+    flex-direction: row-reverse !important;
+  }
+
+  .fp-im img {
+    width: 110px;
+    height: 85px;
+    flex-shrink: 0;
+  }
+
+  .fp-app-text {
+    max-width: unset;
+    flex: 1;
+  }
+
+  .fp-card h3 {
+    font-size: 14px;
+  }
+
+  .fp-card p {
+    font-size: 13px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 375px (Mobile Medium)
+   ============================================================ */
+@media (max-width: 375px) {
+
+  .fp-hero {
+    height: 330px;
+  }
+
+  .fp-hero-content {
+    height: 298px;
+    align-items: flex-start;
+  }
+
+  .logoimg {
+    width: 30px;
+    margin-left: 40px;
+    margin-top: 11px;
+    margin-bottom: 53px;
+  }
+
+  .fp-hero-content h1 {
+    font-size: 15px;
+  }
+
+  .fp-hero-overlay p {
+    font-size: 10px;
+  }
+
+  /* What is financial planning */
+  .fp-section-title {
+    height: 220px;
+  }
+
+  .fp-section-title h2 {
+    font-size: 19px;
+    left: 14px;
+    top: 22px;
+    width: 170px;
+  }
+
+  .fp-text-content {
+    gap: 0px;
+  }
+
+  .human {
+    width: 115px;
+    height: 150px;
+  }
+
+  .fp-text {
+    font-size: 9px;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .fp-text span {
+    font-size: 9px;
+    margin-top: 8px;
+  }
+
+  .leaf {
+    width: 58px;
+    height: 135px;
+  }
+
+  /* Who is this for */
+  .fp-light-title {
+    font-size: 18px;
+    padding: 0 16px;
+  }
+
+  .fp-light-title::after {
+    width: 120px;
+  }
+
+  .fp-list {
+    margin: 16px 14px;
+    gap: 14px;
+  }
+
+  .fp-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .fp-item {
+    gap: 12px;
+  }
+
+  .fp-item p {
+    font-size: 14px;
+  }
+
+  /* Cards */
+  .fp-approch h2 {
+    font-size: 18px;
+    padding: 0 14px;
+  }
+
+  .fp-cards {
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 12px;
+  }
+
+  .fp-card {
+    gap: 10px;
+    padding: 12px 10px;
+  }
+
+  .fp-im img {
+    width: 95px;
+    height: 72px;
+  }
+
+  .fp-card h3 {
+    font-size: 13px;
+  }
+
+  .fp-card p {
+    font-size: 12px;
+  }
+}
+
+
+/* ============================================================
+   BREAKPOINT: 320px (Mobile Small)
+   ============================================================ */
+@media (max-width: 320px) {
+
+  .fp-hero {
+    height: 355px;
+  }
+
+  .fp-hero-content {
+    height: 320px;
+    align-items: flex-start;
+  }
+
+  .logoimg {
+    width: 25px;
+    margin-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+
+  .fp-hero-content h1 {
+    font-size: 12px;
+  }
+
+  .fp-hero-overlay p {
+    font-size: 10px;
+  }
+
+  /* What is financial planning */
+  .fp-section-title {
+    height: 190px;
+  }
+
+  .fp-section-title h2 {
+    font-size: 16px;
+    left: 10px;
+    top: 16px;
+    width: 145px;
+  }
+
+  .fp-text-content {
+    padding: 10px 8px;
+    gap: 0px;
+    width: 311px;
+  }
+
+  .human {
+    width: 95px;
+    height: 125px;
+  }
+
+  .fp-text {
+    font-size: 8px;
+    line-height: 1.3;
+    padding: 0px 15px 10px 0px;
+  }
+
+  .fp-text span {
+    font-size: 8px;
+    margin-top: 6px;
+  }
+
+  .leaf {
+    width: 55px;
+    height: 125px;
+    flex-shrink: 0;
+  }
+
+  /* Who is this for */
+  .fp-light-title {
+    font-size: 16px;
+    padding: 0 12px;
+    margin-bottom: 14px;
+  }
+
+  .fp-light-title::after {
+    width: 100px;
+    height: 2px;
+  }
+
+  .fp-list {
+    margin: 12px 10px;
+    gap: 12px;
+  }
+
+  .fp-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .fp-item {
+    gap: 10px;
+  }
+
+  .fp-item p {
+    font-size: 13px;
+  }
+
+  /* Cards */
+  .fp-approch h2 {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .fp-cards {
+    margin-left: 8px;
+    margin-right: 8px;
+    gap: 10px;
+  }
+
+  .fp-card {
+    gap: 8px;
+    padding: 10px 8px;
+  }
+
+  .fp-im img {
+    width: 80px;
+    height: 60px;
+  }
+
+  .fp-card h3 {
+    font-size: 12px;
+  }
+
+  .fp-card p {
+    font-size: 11px;
+  }
+}

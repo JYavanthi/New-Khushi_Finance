@@ -121,10 +121,10 @@
 .navbar>ul {
   list-style: none;
   display: flex;
-  gap: 80px;
+  gap: 62px;
   align-items: center;
   width: 100%;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 .navbar>ul>li {

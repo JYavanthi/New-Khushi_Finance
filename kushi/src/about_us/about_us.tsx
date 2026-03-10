@@ -55,16 +55,16 @@ const AboutUs = () => {
             </a>
 
             <div className="social-icons">
-              <a href="https://instagram.com/YOUR_PAGE" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/khushi_finance_official/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="https://twitter.com/YOUR_PAGE" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/Khushi__Finance" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="https://facebook.com/YOUR_PAGE" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/profile.php?id=61552391963634" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-facebook-f"></i>
               </a>
-              <a href="https://linkedin.com/company/YOUR_PAGE" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/khushi-finance-88553a3b6/" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-linkedin-in"></i>
               </a>
             </div>

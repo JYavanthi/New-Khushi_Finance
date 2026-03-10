@@ -93,7 +93,7 @@ const Footer = () => {
         <p className="loc"><i className="fa-solid fa-location-dot"></i>5th Cross, 1st Main
           Netajinagar, Bengaluru, Karnataka, 560024</p>
         <p className="ph"><i className="fa-solid fa-phone"></i> +91 9739871634</p>
-        <p className="em"><i className="fa-solid fa-envelope"></i> support@khushifinance.com</p>
+        <p className="em"><i className="fa-solid fa-envelope"></i> support@kushifinance.com</p>
       </div>
 
       {/* bottom */}

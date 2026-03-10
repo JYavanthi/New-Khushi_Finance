@@ -189,7 +189,7 @@ const ContactUs = () => {
                         <i className="fa-solid fa-envelope"></i>
                         <div>
                             <span>Email:</span>
-                            <p>support@khushifinance.com</p>
+                            <p>support@kushifinance.com</p>
                         </div>
                     </a>
 
@@ -201,7 +201,7 @@ const ContactUs = () => {
 
                             {/* FACEBOOK */}
                             <a
-                                href="https://facebook.com/YOUR_PAGE_NAME"
+                                href="https://www.facebook.com/profile.php?id=61552391963634"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -211,7 +211,7 @@ const ContactUs = () => {
 
                             {/* INSTAGRAM */}
                             <a
-                                href="https://instagram.com/YOUR_PAGE_NAME"
+                                href="https://www.instagram.com/khushi_finance_official/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"
@@ -221,7 +221,7 @@ const ContactUs = () => {
 
                             {/* TWITTER / X */}
                             <a
-                                href="https://twitter.com/YOUR_PAGE_NAME"
+                                href="https://x.com/Khushi__Finance"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="social-link"

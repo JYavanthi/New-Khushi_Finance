@@ -157,10 +157,10 @@ const Hero = () => {
       {/* ── CLARITY ── */}
       <section className="kf-clarity">
         <div className="row g-0 align-items-stretch ">
-          <div className="col-12 col-md-6 ">
+          <div className="col-6 ">
             <img src="/assets/images/hero/money.png" alt="Holding money" className="kf-clarity-img" />
           </div>
-          <div className="col-12 col-md-6 kf-clarity-text d-flex flex-column justify-content-center px-1 px-md-5 py-1 py-md-3">
+          <div className="col-6 kf-clarity-text d-flex flex-column justify-content-center px-1 px-md-5 py-1 py-md-3">
             <h2 className="kf-clarity-h2 px-4">Your money deserves clarity, not confusion.</h2>
             <p className="kf-clarity-p px-4">
               Thousands of Indians struggle with poor financial advice. We're here to change that —
@@ -177,17 +177,16 @@ const Hero = () => {
       >
         <h2 className="kf-how-title text-center mb-5">HOW IT WORKS?</h2>
         <div className="container">
-          <div className="row justify-content-center px-2 px-md-5" style={{ gap: "clamp(30px, 5vw, 60px) clamp(20px, 4vw, 50px)" }}>
+          <div className="kf-how-grid">
             {[
               { icon: "/assets/images/hero/works/bc_icon.png", label: "Book a Consultation", cls: "light" },
               { icon: "/assets/images/hero/works/fp_icon.png", label: "Understand Your Financial Picture", cls: "orange" },
               { icon: "/assets/images/hero/works/ta_icon.png", label: "Get Tailored Advice / Loan Options", cls: "orange" },
               { icon: "/assets/images/hero/works/es_icon.png", label: "We Help You Execute Smoothly", cls: "light", smallIcon: true },
             ].map(({ icon, label, cls, smallIcon }) => (
-              <div key={label} className="col-5">
-                <div className={`kf-step-card kf-step-${cls} text-center`}>
-                  <img src={icon} alt={label} className={`kf-step-icon mb-2 ${smallIcon ? "kf-step-icon-sm" : ""}`} />                  <p className="kf-step-label mb-0">{label}</p>
-                </div>
+              <div key={label} className={`kf-step-card kf-step-${cls} text-center`}>
+                <img src={icon} alt={label} className={`kf-step-icon mb-2 ${smallIcon ? "kf-step-icon-sm" : ""}`} />
+                <p className="kf-step-label mb-0">{label}</p>
               </div>
             ))}
           </div>

@@ -158,7 +158,7 @@ p {
 .kf-hero-btn-group .kf-btn-consult,
 .kf-hero-btn-group .kf-btn-loan {
   flex: 1;
-  max-width: clamp(140px, 23vw, 240px);
+  max-width: clamp(140px, 23vw, 260px);
   text-align: center;
   width: auto;
 }
@@ -363,17 +363,20 @@ p {
   padding: clamp(18px, 4vw, 25px) clamp(12px, 2vw, 28px);
   max-width: 550px;
   width: 100%;
-  height: 95%;
+  height: auto;
+  /* grows with content */
+  min-height: 95%;
+  /* still fills panel on larger screens */
 }
 
 .kf-content-h2 {
   color: #1f6f7f;
-  font-size: clamp(0.8rem, 3vw, 3.5rem);
+  font-size: clamp(1rem, 3vw, 3.5rem);
   margin-bottom: 8px;
 }
 
 .kf-content-p {
-  font-size: clamp(.45rem, 2vw, 1.5rem);
+  font-size: clamp(0.7rem, 2vw, 1.5rem);
   color: #333;
   line-height: 1.6;
   margin: 0;
@@ -405,8 +408,9 @@ p {
 
 /* Dots */
 .kf-dot {
-  width: clamp(20px, 4vw, 32px);
-  height: clamp(20px, 4vw, 32px);
+  width: clamp(10px, 3vw, 32px);
+  /* smaller on mobile */
+  height: clamp(10px, 3vw, 32px);
   border-radius: 50%;
   background: #98c0d2;
   cursor: pointer;
@@ -419,6 +423,8 @@ p {
   background: #00989c;
   transform: scale(1.2);
 }
+
+
 
 /* ── LOAN ASSISTANCE ── */
 .kf-loan-bg {
@@ -524,7 +530,7 @@ p {
 }
 
 .kf-why-li {
-  font-size: clamp(0.6rem, 2.5vw, 2.5rem);
+  font-size: clamp(0.7rem, 2.5vw, 2.5rem);
   color: #fff;
   margin-bottom: clamp(10px, 2.5vw, 48px);
   padding-left: 20px;
@@ -550,12 +556,12 @@ p {
 }
 
 .kf-clarity-h2 {
-  font-size: clamp(1.4rem, 6vw, 4rem);
+  font-size: clamp(0.75rem, 4vw, 4rem);
   color: #e5d28a;
 }
 
 .kf-clarity-p {
-  font-size: clamp(.95rem, 4vw, 2rem);
+  font-size: clamp(0.55rem, 2.8vw, 2rem);
   color: #fff5dd;
   line-height: 1.3;
   margin: 0;
@@ -572,21 +578,35 @@ p {
   color: #ff8c1a;
 }
 
+.kf-how-grid {
+  display: grid;
+  grid-template-columns: repeat(2, clamp(120px, 30vw, 320px));
+  gap: clamp(36px, 20vw, 120px) clamp(36px, 20vw, 150px);
+  justify-content: center;
+  padding: 0 16px;
+}
+
+
+
 .kf-step-card {
   border: clamp(1px, 0.2vw, 2px) solid #000;
   border-radius: clamp(16px, 4vw, 48px);
   padding: clamp(12px, 2vw, 30px);
   aspect-ratio: 1 / 1;
-  max-width: clamp(140px, 28vw, 320px);
-  margin: auto;
-  box-shadow: clamp(12px, 2vw, 30px) clamp(12px, 2vw, 30px) 0 -2px var(--shadow-fill, #fff5de),
-    clamp(11px, 2vw, 30px) clamp(11px, 2vw, 30px) 0 0 #000;
+  box-shadow: clamp(6px, 5vw, 30px) clamp(6px, 4vw, 30px) 0 0 var(--shadow-fill),
+    clamp(6px, 5vw, 30px) clamp(6px, 4vw, 30px) 0 2px #000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80%;
-  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .kf-step-card {
+    box-shadow:
+      clamp(4px, 3vw, 30px) clamp(4px, 3vw, 30px) 0 0 var(--shadow-fill),
+      clamp(4px, 3vw, 30px) clamp(4px, 3vw, 30px) 0 1px #000;
+  }
 }
 
 .kf-step-light {
@@ -602,7 +622,7 @@ p {
 
 .kf-step-icon-sm {
   width: clamp(25px, 3.5vw, 55px);
-  height: clamp(25px, 5vw, 61px);
+  height: clamp(25px, 5vw, 80px);
 }
 
 .kf-step-light .kf-step-label {
@@ -614,11 +634,11 @@ p {
 }
 
 .kf-step-icon {
-  width: clamp(20px, 5vw, 100px);
+  width: clamp(20px, 8vw, 80px);
 }
 
 .kf-step-label {
-  font-size: clamp(.45rem, 1.6vw, 1.55rem);
+  font-size: clamp(0.7rem, 3vw, 1.7rem);
   font-weight: 600;
   line-height: 1.2;
   margin-top: 5%;
@@ -683,14 +703,13 @@ p {
   color: #fff9e9;
   border: none;
   border-radius: clamp(6px, 2vw, 20px);
-  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
-  font-size: clamp(0.5rem, 1.4vw, 1.7rem);
-  font-weight: 600;
+  padding: clamp(0px, 1.5vw, 14px) clamp(0px, 3vw, 36px);
+  font-size: clamp(0.7rem, 2vw, 1.7rem);
   cursor: pointer;
   transition: background 0.2s;
   align-self: flex-end;
   width: fit-content;
-  margin-right: 5%;
+  margin-right: clamp(8px, 6vw, 30px)
 }
 
 .kf-cta-btn:hover {
@@ -908,21 +927,29 @@ p {
 
 .bl-hero-btn-wrap {
   position: absolute;
-  top: 47%;
-  right: 18%;
-  transform: translateY(-105%);
-  /* Fix 4: equal-width paired buttons */
+  top: 45%;
+  right: 17%;
+  transform: translateY(-50%);
   display: flex;
   gap: clamp(8px, 1.5vw, 16px);
   align-items: center;
 }
 
-/* Fix 4: equal-width paired buttons for BusinessLoan */
 .bl-hero-btn-wrap .bl-btn {
-  flex: 1;
-  max-width: clamp(80px, 20vw, 230px);
-  min-width: 0;
-  text-align: center;
+  width: fit-content;
+  border-radius: clamp(6px, 10vw, 40px);
+  flex: none;
+  background: linear-gradient(90deg, #ffd055, #ff9243);
+  border: 0.5px solid #009a9e;
+}
+
+@media (max-width: 768px) {
+  .bl-hero-btn-wrap {
+    top: 47%;
+    left: 72%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
 }
 
 /* Buttons */
@@ -930,10 +957,9 @@ p {
   display: inline-block;
   border: none;
   border-radius: clamp(6px, 2vw, 50px);
-  /* Fix 5: proportional padding */
   padding: clamp(8px, 1.5vw, 14px) clamp(8px, 3vw, 36px);
   font-weight: 700;
-  font-size: clamp(0.4rem, 2vw, 1.5rem);
+  font-size: clamp(0.6rem, 3vw, 2rem);
   letter-spacing: 0.06em;
   cursor: pointer;
   text-decoration: none;
@@ -1062,6 +1088,8 @@ p {
 }
 
 @media (max-width: 767px) {
+
+
 
   .bl-fund-item,
   .bl-fund-item-right {
@@ -1208,57 +1236,25 @@ p {
   text-align: end;
 }
 
-/* Fix 4: equal-width paired buttons for HomeLoan hero */
-.hl-hero-btn-group {
-  display: flex;
-  gap: clamp(8px, 1.5vw, 14px);
-  justify-content: flex-end;
-}
-
-.hl-hero-btn-group .hl-btn-gold,
-.hl-hero-btn-group .hl-btn-teal {
-  flex: 1;
-  max-width: 200px;
-  min-width: 0;
-  text-align: center;
-
-}
-
-/* Buttons */
-.hl-btn-gold,
-.hl-btn-teal {
+.hl-btn-gold {
+  background-color: #f5a623;
+  color: #ffffff;
+  font-size: clamp(0.85rem, 3vw, 2rem);
   display: inline-block;
   text-decoration: none;
-  /* Fix 5: proportional padding */
   padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
-  border-radius: clamp(6px, 2vw, 25px);
+  border-radius: clamp(10px, 5vw, 45px);
   font-weight: 700;
   letter-spacing: 0.5px;
   text-align: center;
   transition: background-color 0.2s ease;
   border: none;
   cursor: pointer;
-}
-
-.hl-btn-gold {
-  background-color: #f5a623;
-  color: #ffffff;
-  font-size: clamp(0.85rem, 1.5vw, 1.25rem);
+  width: fit-content;
 }
 
 .hl-btn-gold:hover {
   background-color: #d4891a;
-  color: #fff;
-}
-
-.hl-btn-teal {
-  background-color: #006666;
-  color: #ffffff;
-  font-size: clamp(0.8rem, 1.3vw, 0.9rem);
-}
-
-.hl-btn-teal:hover {
-  background-color: #004d4d;
   color: #fff;
 }
 
@@ -1273,13 +1269,8 @@ p {
     text-align: center;
   }
 
-  .hl-hero-btn-group {
-    justify-content: center;
-  }
-
-  .hl-hero-btn-group .hl-btn-gold,
-  .hl-hero-btn-group .hl-btn-teal {
-    max-width: 160px;
+  .hl-btn-gold.ms-auto {
+    margin: 0 auto;
   }
 }
 
@@ -1384,7 +1375,7 @@ p {
 }
 
 .hl-buy-title {
-  font-size: clamp(1.4rem, 3.5vw, 3rem);
+  font-size: clamp(1rem, 3.5vw, 3rem);
   font-weight: 700;
   color: #222;
   margin-bottom: 1.2rem;
@@ -1399,7 +1390,7 @@ p {
 }
 
 .hl-buy-list li {
-  font-size: clamp(0.9rem, 1.8vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.8vw, 1.5rem);
   color: #333;
   margin-bottom: 0.6rem;
 }
@@ -1412,7 +1403,10 @@ p {
 
 @media (max-width: 767px) {
   .hl-buy-img {
-    display: none;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
   }
 
   .hl-buy-title {
@@ -1458,8 +1452,14 @@ p {
 }
 
 @media(max-width: 767px) {
+  .hl-journey-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .hl-journey-logo {
-    margin-right: 1%;
+    margin-right: 0;
+    margin-bottom: 0.4rem;
   }
 
   .hl-journey-title {
@@ -1535,17 +1535,17 @@ p {
 }
 
 .pl-hero-logomark {
-  width: clamp(40px, 6vw, 64px);
+  width: clamp(20px, 6vw, 64px);
   object-fit: contain;
 }
 
 .pl-hero-wordmark {
-  width: clamp(100px, 18vw, 220px);
+  width: clamp(50px, 18vw, 220px);
   object-fit: contain;
 }
 
 .pl-hero-heading {
-  font-size: clamp(1rem, 5vw, 6rem);
+  font-size: clamp(1rem, 9vw, 7rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -1556,21 +1556,20 @@ p {
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-left: 15%;
 }
 
 .pl-btn-primary {
   /* Fix 5: proportional padding */
-  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
-  border-radius: clamp(6px, 2vw, 20px);
-  font-size: clamp(0.5rem, 2.2vw, 1.2rem);
+  padding: clamp(8px, 1.5vw, 14px) clamp(10px, 3vw, 36px);
+  border-radius: clamp(6px, 5vw, 30px);
+  font-size: clamp(0.7rem, 2.2vw, 1.5rem);
   font-weight: 600;
   text-align: center;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
-  max-width: 60%;
+  max-width: fit-content;
   border: none;
-  background-color: #00988b;
+  background-color: #00b1b7;
   color: #fff;
 }
 
@@ -1580,14 +1579,14 @@ p {
 }
 
 .pl-section-title {
-  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
   font-weight: 700;
   color: #006666;
   text-decoration: underline;
 }
 
 .pl-section-desc {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.7rem, 2.5vw, 1.25rem);
   color: #444;
   line-height: 1.8;
   max-width: 700px;
@@ -1793,7 +1792,7 @@ p {
 }
 
 .pl-btn-teal {
-  background-color: #006666;
+  background-color:#009a9e;
   color: #fff;
   font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
@@ -1838,11 +1837,38 @@ p {
   color: #fff;
 }
 
+
+
 @media (max-width: 768px) {
 
-  .pl-deco-left,
-  .pl-deco-right {
+  .pl-deco-left {
     display: none;
+  }
+
+  .pl-deco-right {
+    width: clamp(70px, 15vw, 120px);
+
+    bottom: 0;
+    opacity: 1;
+    left: 98%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+  .pl-deco-left {
+    display: block;
+    width: clamp(70px, 15vw, 120px);
+  }
+
+  .pl-deco-right {
+    width: clamp(70px, 15vw, 120px);
+
+    bottom: 0;
+    opacity: 1;
+    left: 85%;
+    transform: none;
   }
 }
 
@@ -1887,10 +1913,11 @@ p {
   white-space: nowrap;
 }
 
-/* Fix 4: equal-width paired buttons for StudentLoan */
 .sl-hero-btn-wrap .sl-btn {
   flex: 1;
   min-width: clamp(80px, 18vw, 200px);
+  background: linear-gradient(90deg, #00a2a9, #33d36b);
+  border-radius: clamp(6px, 10vw, 60px);
 }
 
 /* Buttons */
@@ -1899,7 +1926,7 @@ p {
   border-radius: clamp(6px, 2vw, 50px);
   padding: clamp(8px, 1.5vw, 14px) clamp(8px, 2vw, 36px);
   font-weight: 700;
-  font-size: clamp(0.5rem, 2.5vw, 3rem);
+  font-size: clamp(0.7rem, 3vw, 3.5rem);
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: opacity 0.2s, transform 0.15s;
@@ -2126,12 +2153,14 @@ p {
 }
 
 .lc-symbol-pill {
-  background: #28606d;        /* force teal — don't let it inherit white */
+  background: #28606d;
+  /* force teal — don't let it inherit white */
   color: #ffffff;
   font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
-    min-width: 52px;              /* same width for all three */
+  min-width: 52px;
+  /* same width for all three */
   justify-content: center;
   padding: 0 10px;
   height: 100%;
@@ -2317,7 +2346,7 @@ p {
 }
 
 .about-points li {
-  font-size: clamp(0.7rem, 1.2vw, 0.93rem);
+  font-size: clamp(0.8rem, 1.2vw, 0.93rem);
   color: #333;
   line-height: 1.8;
   margin-bottom: 1rem;

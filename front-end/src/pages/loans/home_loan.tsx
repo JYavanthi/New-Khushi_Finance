@@ -97,8 +97,8 @@ const HomeLoan = () => {
         {/* Buy Build Switch */}
         <section className="py-4 py-md-5">
           <div className="container">
-            <div className="row align-items-md-center g-4">
-              <div className="col-12 col-md-6">
+            <div className="row align-items-center g-4">
+              <div className="col-8 col-md-6">
                 <h3 className="hl-buy-title">Buy, build or switch your home loan</h3>
                 <ul className="hl-buy-list">
                   <li>Home purchase loan</li>
@@ -107,7 +107,7 @@ const HomeLoan = () => {
                   <li>Top-up on existing home loan</li>
                 </ul>
               </div>
-              <div className="col-12 col-md-6 text-center">
+              <div className="col-4 col-md-6 text-center">
                 <img src="/assets/images/hl/lt.jpg" alt="Home types" className="hl-buy-img" />
               </div>
             </div>
@@ -124,7 +124,7 @@ const HomeLoan = () => {
                 <img src="/assets/images/hl/fam.jpg" alt="Family" className="hl-journey-img" />
               </div>
               <div className="col-12 col-md-7 text-center text-md-end">
-                <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-2 d-md-block">
+                <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3 d-md-block">
                   <img src="/assets/images/lo.png" alt="logo" className="hl-journey-logo" />
                   <h3 className="hl-journey-title">Start your home loan<br />journey today</h3>
                 </div>

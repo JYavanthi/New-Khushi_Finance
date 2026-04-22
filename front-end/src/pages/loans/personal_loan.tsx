@@ -39,21 +39,21 @@ const PersonalLoan = () => {
 
                 {/* Hero */}
                 <section className="pl-hero-new">
-                    <div className="container-fluid px-4 px-md-5">
+                    <div className="container-fluid ps-4 ps-md-5">
                         <div className="row align-items-center">
-                            <div className="col-6 d-flex flex-column justify-content-center py-3">
-                                <div className="d-flex align-items-center gap-2 gap-md-3 mb-3">
+                            <div className="col-7 col-md-6 d-flex flex-column justify-content-center py-3">
+                                <div className="d-flex align-items-center mb-3 mb-md-5 ms-1 ms-md-3">
                                     <img src="/assets/images/lo.png" alt="Khushi Finance" className="pl-hero-logomark" />
                                     <img src="/assets/images/kushi.png" alt="Khushi Finance" className="pl-hero-wordmark" />
                                 </div>
-                                <h1 className="pl-hero-heading mb-4">
+                                <h1 className="pl-hero-heading mb-3 mb-md-5">
                                     PERSONAL<br />LOANS
                                 </h1>
                                 <button className="pl-btn-primary" onClick={() => setShowContact(true)}>
                                     Get Your Consultation Now
                                 </button>
                             </div>
-                            <div className="col-6 d-flex justify-content-center align-items-center">
+                            <div className="col-5 col-md-6 px-0 d-flex justify-content-end align-items-end">
                                 <img src="/assets/images/pl/banner1.jpg" alt="Personal Loans" className="pl-hero-banner-img" />
                             </div>
                         </div>
@@ -61,7 +61,7 @@ const PersonalLoan = () => {
                 </section>
 
                 {/* Personal Loan Made Simple */}
-                <section className="pl-simple py-5 position-relative overflow-hidden">
+                <section className="pl-simple py-3 py-md-4  position-relative overflow-hidden">
                     <img src="/assets/images/pl/leaf.png" alt="" className="pl-deco-left" />
                     <div className="container">
                         <h2 className="pl-section-title text-center mb-3">

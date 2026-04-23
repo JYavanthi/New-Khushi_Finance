@@ -147,7 +147,6 @@ p {
   }
 }
 
-/* ── HERO BUTTON GROUP (Fix 4: equal-width paired buttons) ── */
 .kf-hero-btn-group {
   display: flex;
   gap: clamp(8px, 1.5vw, 16px);
@@ -172,7 +171,6 @@ p {
   padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
   font-size: clamp(0.8rem, 1.5vw, 1.45rem);
   cursor: pointer;
-  width: fit-content;
   transition: background .2s;
 }
 
@@ -199,7 +197,6 @@ p {
   border-radius: clamp(6px, 2vw, 15px);
   padding: clamp(7px, 1vw, 15px) clamp(16px, 3.6vw, 30px);
   font-size: clamp(0.8rem, 1.8vw, 1.3rem);
-  width: fit-content;
   cursor: pointer;
   transition: background .2s;
 }
@@ -455,7 +452,6 @@ p {
   }
 }
 
-/* ── LOAN PILL GROUP (Fix 4: equal-width stacked pills) ── */
 .kf-loan-pill-group {
   display: flex;
   flex-direction: column;
@@ -468,7 +464,6 @@ p {
   width: 100%;
   max-width: clamp(280px, 50vw, 520px);
   min-width: unset;
-  /* let the group control width instead */
   box-sizing: border-box;
 }
 
@@ -484,7 +479,6 @@ p {
   padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
   background: #fff;
   width: fit-content;
-  min-width: clamp(260px, 36vw, 500px);
   transition: opacity .2s;
 }
 
@@ -902,10 +896,6 @@ p {
   color: #e6a817;
 }
 
-.bl-teal {
-  color: #1a6b6b;
-}
-
 .bl-page {
   font-family: "Segoe UI", sans-serif;
   color: #333333;
@@ -1032,9 +1022,7 @@ p {
   text-align: right;
 }
 
-.bl-feature-right .bl-feature-text {
-  align-items: flex-end;
-}
+
 
 .bl-feature-icon {
   width: clamp(56px, 8vw, 100px);
@@ -1088,9 +1076,6 @@ p {
 }
 
 @media (max-width: 767px) {
-
-
-
   .bl-fund-item,
   .bl-fund-item-right {
     width: 100%;
@@ -1185,6 +1170,7 @@ p {
 @media (max-width: 767px) {
   .hl-hero {
     flex-direction: column;
+    padding-top: clamp(8px, 3vw, 20px);
   }
 }
 
@@ -1302,9 +1288,6 @@ p {
   text-align: right;
 }
 
-.hl-row-reverse .hl-simple-text {
-  align-items: flex-end;
-}
 
 @media (max-width: 767px) {
   .hl-simple-row {
@@ -1471,26 +1454,10 @@ p {
   }
 }
 
-/* Fix 4: equal-width paired CTA buttons for HomeLoan */
-.hl-cta-btn-group {
-  display: flex;
-  gap: clamp(10px, 2vw, 20px);
-  flex-wrap: wrap;
-}
-
-.hl-cta-btn-group .hl-cta-btn-gold,
-.hl-cta-btn-group .hl-cta-btn-teal {
-  flex: 1;
-  max-width: 260px;
-  min-width: 140px;
-  text-align: center;
-}
-
 .hl-cta-btn-gold,
 .hl-cta-btn-teal {
   display: inline-block;
   text-decoration: none;
-  /* Fix 5: proportional padding */
   padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
   border-radius: clamp(6px, 2vw, 25px);
   font-size: clamp(0.9rem, 2vw, 1.8rem);
@@ -1559,7 +1526,6 @@ p {
 }
 
 .pl-btn-primary {
-  /* Fix 5: proportional padding */
   padding: clamp(8px, 1.5vw, 14px) clamp(10px, 3vw, 36px);
   border-radius: clamp(6px, 5vw, 30px);
   font-size: clamp(0.7rem, 2.2vw, 1.5rem);
@@ -1652,6 +1618,7 @@ p {
   align-items: center;
   text-align: center;
   width: clamp(80px, 12vw, 110px);
+  z-index: 1;
 }
 
 .pl-ideal-img {
@@ -1712,6 +1679,7 @@ p {
   font-weight: 700;
   color: #f5a623;
   text-align: center;
+  z-index: 0;
 }
 
 .pl-step {
@@ -1766,7 +1734,6 @@ p {
 .pl-btn-teal,
 .pl-btn-expert-teal {
   text-decoration: none;
-  /* Fix 5: proportional padding */
   padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
   border-radius: clamp(6px, 2vw, 25px);
   font-weight: 600;
@@ -1776,20 +1743,6 @@ p {
   border: none;
 }
 
-.pl-btn-gold-outline {
-  text-decoration: none;
-  /* Fix 5: proportional padding */
-  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
-  border-radius: clamp(6px, 2vw, 25px);
-  font-weight: 600;
-  text-align: center;
-  transition: background-color 0.2s ease, color 0.2s ease;
-  display: inline-block;
-  background-color: #f5b145;
-  color: #004d4d;
-  border: 2px solid #f5a623;
-  font-size: clamp(0.85rem, 2.5vw, 1.5rem);
-}
 
 .pl-btn-teal {
   background-color:#009a9e;
@@ -1800,11 +1753,6 @@ p {
 .pl-btn-teal:hover {
   background-color: #004d4d;
   color: #fff;
-}
-
-.pl-btn-gold-outline:hover {
-  background-color: #f5a623;
-  color: #004d4d;
 }
 
 .pl-expert {
@@ -1829,15 +1777,12 @@ p {
   background-color: #006666;
   color: #fff;
   font-size: clamp(1.2rem, 3vw, 2rem);
-  padding: clamp(8px, 1.5vw, 14px) clamp(16px, 3vw, 36px);
 }
 
 .pl-btn-expert-teal:hover {
   background-color: #004d4d;
   color: #fff;
 }
-
-
 
 @media (max-width: 768px) {
 
@@ -1876,10 +1821,6 @@ p {
 
 .sl-text-gold {
   color: #e6a817;
-}
-
-.sl-text-teal {
-  color: #1a6b6b;
 }
 
 .sl-page {
@@ -2055,18 +1996,6 @@ p {
   right: 25%;
 }
 
-/* Fix 4: equal-width CTA buttons for StudentLoan */
-.sl-cta-btn-group {
-  display: flex;
-  flex-direction: column;
-  gap: clamp(10px, 1.5vw, 16px);
-  align-items: flex-start;
-}
-
-.sl-cta-btn-group .sl-btn-block {
-  width: 100%;
-  max-width: 340px;
-}
 
 .sl-cta-img {
   width: 100%;
@@ -2086,14 +2015,6 @@ p {
 @media (max-width: 767px) {
   .sl-btn-block {
     margin: auto;
-  }
-
-  .sl-cta-btn-group {
-    align-items: center;
-  }
-
-  .sl-cta-btn-group .sl-btn-block {
-    max-width: 280px;
   }
 }
 
@@ -2260,10 +2181,6 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.lc-suffix-gap {
-  margin-left: 6px;
 }
 
 .lc-range-labels {

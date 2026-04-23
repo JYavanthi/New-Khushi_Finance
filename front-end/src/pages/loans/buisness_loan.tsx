@@ -57,7 +57,7 @@ const BusinessLoan = () => {
         <section className="bl-hero">
           <img src="/assets/images/bl/ban.png" alt="Business Loan Banner" className="bl-hero-bg" />
           <div className="bl-hero-btn-wrap">
-            <a href="#apply" className="bl-btn bl-btn-gold" onClick={() => setShowContact(true)}>
+            <a className="bl-btn bl-btn-gold" onClick={() => setShowContact(true)}>
               APPLY NOW
             </a>
           </div>
@@ -157,8 +157,8 @@ const BusinessLoan = () => {
 
         {/* CTA Buttons */}
         <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 py-4 px-3">
-          <a href="#apply" className="bl-btn bl-btn-gold" onClick={() => setShowContact(true)}>APPLY NOW</a>
-          <a href="#contact" className="bl-btn bl-btn-teal" onClick={() => navigate('/contact-us')}>CONTACT US</a>
+          <a className="bl-btn bl-btn-gold" onClick={() => setShowContact(true)}>APPLY NOW</a>
+          <a className="bl-btn bl-btn-teal" onClick={() => navigate('/contact-us')}>CONTACT US</a>
         </div>
         <ContactPopup show={showContact} onClose={() => setShowContact(false)} />
       </div>

@@ -43,21 +43,23 @@ const HomeLoan = () => {
       <main className="hl-page">
 
         {/* Hero */}
-        <section className="hl-hero border-bottom">
-          <div className="hl-hero-img-col">
-            <img src="/assets/images/hl/home.jpg" alt="Home Loan" className="hl-hero-img" />
-          </div>
-          <div className="hl-hero-content">
-            <h1 className="hl-hero-title">Home Loan</h1>
-            <h2 className="hl-hero-sub">Own your dream home<br />with confidence</h2>
-            <p className="hl-hero-desc">
-              Get the right home loan with expert guidance from Khushi Finance.
-              We help you choose the right housing loan, plan your EMIs and complete
-              your application smoothly.
-            </p>
-            <button className="hl-btn-gold ms-auto" onClick={() => setShowContact(true)}>
-              APPLY NOW
-            </button>
+        <section className="border-bottom">
+          <div className="row g-0 hl-hero-row">
+            <div className="col-6 hl-hero-img-col">
+              <img src="/assets/images/hl/home.jpg" alt="Home Loan" className="hl-hero-img" />
+            </div>
+            <div className="col-6 hl-hero-content">
+              <h1 className="hl-hero-title">Home Loan</h1>
+              <h2 className="hl-hero-sub">Own your dream home<br />with confidence</h2>
+              <p className="hl-hero-desc">
+                Get the right home loan with expert guidance from Khushi Finance.
+                We help you choose the right housing loan, plan your EMIs and complete
+                your application smoothly.
+              </p>
+              <button className="hl-btn-gold ms-auto" onClick={() => setShowContact(true)}>
+                APPLY NOW
+              </button>
+            </div>
           </div>
         </section>
 
@@ -117,14 +119,14 @@ const HomeLoan = () => {
         <hr className="hl-section-divider" />
 
         {/* Start Journey */}
-        <section className="py-4 py-md-5">
-          <div className="container">
+        <section className="py-4 py-md-5 ">
+          <div className="container ">
             <div className="row align-items-center g-4">
-              <div className="col-12 col-md-5 text-center">
+              <div className="col-4 col-md-5 text-center">
                 <img src="/assets/images/hl/fam.jpg" alt="Family" className="hl-journey-img" />
               </div>
-              <div className="col-12 col-md-7 text-center text-md-end">
-                <div className="d-flex flex-row align-items-center justify-content-center justify-content-md-end gap-3 d-md-block">
+              <div className="col-8 col-md-7 text-end">
+                <div className="d-flex flex-column align-items-end gap-2">
                   <img src="/assets/images/lo.png" alt="logo" className="hl-journey-logo" />
                   <h3 className="hl-journey-title">Start your home loan<br />journey today</h3>
                 </div>
@@ -142,7 +144,7 @@ const HomeLoan = () => {
         {/* CTA Buttons */}
         <section className="py-4 pb-md-5">
           <div className="container">
-            <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 gap-sm-5">
+            <div className="d-flex flex-row justify-content-center align-items-center gap-3">
               <button className="hl-cta-btn-gold" onClick={() => setShowContact(true)}>
                 APPLY NOW
               </button>

@@ -127,7 +127,7 @@ const BusinessLoan = () => {
                   <img src={item.icon} alt={item.label} className="bl-fund-icon" />
                   <span className="bl-fund-label">{item.label}</span>
                   {item.trail && (
-                    <img src={item.trail} alt="" className="bl-fund-trail" aria-hidden="true" />
+                    <img src={item.trail} alt="" className={`bl-fund-trail bl-fund-trail-${item.align}`} aria-hidden="true" />
                   )}
                 </div>
               ))}
@@ -156,7 +156,7 @@ const BusinessLoan = () => {
         </section>
 
         {/* CTA Buttons */}
-        <div className="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 py-4 px-3">
+        <div className="d-flex flex-row justify-content-center align-items-center gap-3 py-4 px-3">
           <a className="bl-btn bl-btn-gold" onClick={() => setShowContact(true)}>APPLY NOW</a>
           <a className="bl-btn bl-btn-teal" onClick={() => navigate('/contact-us')}>CONTACT US</a>
         </div>

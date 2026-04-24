@@ -91,7 +91,7 @@ const ContactUs = () => {
                     className="form-control" rows={5} placeholder="Enter your address" required />
                 </div>
 
-                <button type="submit" className="btn btn-warning text-white fw-semibold mt-3 float-end px-4 rounded-pill">
+                <button type="submit" className="btn btn-warning text-white fw-semibold mt-3 px-4 rounded-pill float-md-end">
                   Send a Message
                 </button>
               </form>

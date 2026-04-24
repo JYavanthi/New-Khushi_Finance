@@ -64,7 +64,7 @@ const PersonalLoan = () => {
                 <section className="pl-simple py-3 py-md-4  position-relative overflow-hidden">
                     <img src="/assets/images/pl/leaf.png" alt="" className="pl-deco-left" />
                     <div className="container">
-                        <h2 className="pl-section-title text-center mb-3">
+                        <h2 className="pl-sim-section-title text-center mb-3">
                             Personal <span className="pl-gold">Loan</span> Made <span className="pl-gold">Simple</span>
                         </h2>
                         <p className="pl-section-desc text-center mx-auto mb-4">
@@ -119,7 +119,7 @@ const PersonalLoan = () => {
                             {steps.map((step, i) => (
                                 <div
                                     key={i}
-                                    className={`pl-step d-flex align-items-center gap-3 pb-3 position-relative${step.side === "right" ? " ms-auto text-end flex-row-reverse" : ""}`}
+                                    className={`pl-step d-flex align-items-center gap-3 position-relative${step.side === "right" ? " pl-step-right" : ""}`}
                                 >
                                     <img src={step.img} alt={step.text} className="pl-step-img flex-shrink-0" />
                                     <p className="pl-step-text mb-0">{step.text}</p>

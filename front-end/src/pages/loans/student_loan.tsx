@@ -112,7 +112,7 @@ const StudentLoan = () => {
         {/* Education Loan Planning */}
         <section className="py-4 py-md-5">
           <div className="container">
-            <h2 className="sl-section-title">
+            <h2 className="sl-pl-section-title">
               Education <span className="sl-text-gold">loan</span> Planning
             </h2>
             <hr className="sl-title-rule" />
@@ -144,7 +144,7 @@ const StudentLoan = () => {
         <section className="py-4 py-md-5">
           <div className="container">
             <h2 className="sl-section-title">
-              Steps <span className="sl-text-gold"> to </span> Apply<span className="sl-text-gold">at</span> Khushi <span className="sl-text-gold">Finance</span>
+              Steps <span className="sl-text-gold"> To </span> Apply <span className="sl-text-gold"> At</span> Khushi <span className="sl-text-gold">Finance</span>
             </h2>
             <hr className="sl-title-rule" />
 
@@ -152,7 +152,7 @@ const StudentLoan = () => {
               {steps.map((step, i) => (
                 <div
                   key={i}
-                  className={`sl-step d-flex align-items-start gap-3 pb-4 pb-md-5 position-relative${step.align === "right" ? " flex-row-reverse" : ""}`}
+                  className={`sl-step d-flex align-items-center gap-3 pb-4 pb-md-5 position-relative${step.align === "right" ? " flex-row-reverse" : ""}`}
                 >
                   <img src={step.img} alt={step.title} className="sl-step-icon flex-shrink-0" />
                   <div className={`sl-step-text pt-2${step.align === "right" ? " text-end" : ""}`}>
